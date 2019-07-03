@@ -1,0 +1,11 @@
+.container
+  h1.mt-5
+    | Chat room
+  form.form-inline.mt-3
+    .form-group
+      input type="text" id="chat-input" class="form-control"
+    button.ml-3.btn.btn-primary id="button"
+      | 送信
+
+  #messages.mt-5
+    = render @messages
